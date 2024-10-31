@@ -1,4 +1,6 @@
 # SUYU Multiplayer Fix
+[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/X8X7MF230)
+
 The project is a fix for the Switch emulation project "Suyu". Suyu offers an "online multiplayer" that allows you to create multiplayer rooms and play together with other users who use the same program. When the project was discontinued around 3 months ago, it was only possible to participate in public lobbies with Suyu via a detour because official servers were taken offline. This program fixes this problem by overwriting and activating the Suyu multiplayer API so that you can participate in public rooms again.
 
 **How it works:**
