@@ -22,12 +22,11 @@ banner = '''
 
 
 def generate_random_token():
-    """Generates a random UUID token."""
+    print("[+] Generate Activation Token...")
     return str(uuid.uuid4())
 
 
 def check_problematic_process(process_name="suyu.exe" or "suyu"):
-    """Checks if a problematic process is running, stops it, and outputs a message."""
     process_detected = False
     for proc in psutil.process_iter(attrs=["pid", "name"]):
         try:
@@ -43,7 +42,6 @@ def check_problematic_process(process_name="suyu.exe" or "suyu"):
 
 
 def update_config_file(username, config_path):
-    """Updates the config file by replacing the [WebService] section with new values."""
     if not os.path.exists(config_path):
         print(f"{red}[-] Config file not found at {config_path}.")
         return
